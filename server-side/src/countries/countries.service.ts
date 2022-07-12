@@ -49,7 +49,7 @@ export class CountriesService {
     return country.save();
   }
 
-  async remove(removeCountryInput: RemoveCountryInput): Promise<any> {
+  async remove(removeCountryInput: RemoveCountryInput): Promise<String> {
     const country = await this.countryModel.findByIdAndRemove({
       _id: removeCountryInput._id,
     });

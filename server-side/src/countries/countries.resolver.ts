@@ -36,7 +36,7 @@ export class CountriesResolver {
     return this.countriesService.update(updateCountryInput);
   }
 
-  @Mutation(() => CountryDto, { name: 'removeCountryByID' })
+  @Mutation(() => String, { name: 'removeCountryByID' })
   @UseGuards(JwtAuthGuard)
   remove(@Args('removeCountryInput') removeCoutryInput: RemoveCountryInput) {
     return this.countriesService.remove(removeCoutryInput);

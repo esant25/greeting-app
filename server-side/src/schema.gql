@@ -40,7 +40,7 @@ type Mutation {
   login(loginUserInput: LoginUserInput!): LoginResponse!
   createCountry(createCountryInput: CountryInput!): CountryDto!
   updateCountry(updateCountryInput: UpdateCountryInput!): CountryDto!
-  removeCountryByID(removeCountryInput: RemoveCountryInput!): CountryDto!
+  removeCountryByID(removeCountryInput: RemoveCountryInput!): String!
 }
 
 input LoginUserInput {

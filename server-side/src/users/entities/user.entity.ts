@@ -9,5 +9,5 @@ export class User {
   username: string;
 
   @Field()
-  password: string;
+  password?: string;
 }
