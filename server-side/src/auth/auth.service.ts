@@ -23,6 +23,7 @@ export class AuthService {
   }
 
   async login(user: User) {
+    console.log(user)
     const { password, ...result } = user;
     return {
       access_token: this.jwtService.sign({

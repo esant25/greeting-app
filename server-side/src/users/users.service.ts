@@ -4,8 +4,8 @@ import { CreateUserInput } from './dto/create-user.input';
 @Injectable()
 export class UsersService {
   private readonly users = [
-    { id: 1, username: 'marius', password: 'not-secure' },
-    { id: 2, username: 'maria', password: 'not-secure' },
+    { id: 1, username: 'admin', password: 'admin' },
+    { id: 2, username: 'user', password: 'user' },
   ];
 
   create(createUserInput: CreateUserInput){
